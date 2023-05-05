@@ -1,8 +1,6 @@
 'strict mode'
 
-
 //Identifying elements I would be adjusting 
-
 // document.querySelector('.score').textContent = 15;
 // document.querySelector('.message').textContent = 'start typing.';
 // document.querySelector('.number').textContent = '3';
@@ -20,9 +18,8 @@ let number = Math.trunc(Math.random() * 20) + 1; //random
 let score = 10;
 document.querySelector('.score').textContent = score;
 
-
 //Now for the highScore. We will store it in a variable
-let highScore = 0; //it should be zero because it will always begin with zero. For the values during the game, the high score only changes when we win
+let highScore = 0; //its zero because it always begins with zero and only changes when we win
 
 //We need to create an event to the check button once it is clicked
 document.querySelector('.check').addEventListener('click', function(){
@@ -33,10 +30,9 @@ document.querySelector('.check').addEventListener('click', function(){
     let guess = Number(document.querySelector('.guess').value);
     console.log(typeof guess, guess);
 
-    //The first scenario to check is an empty input box // No answer.
-    //i.e if there is no number or guess is empty
+    //The first scenario to check is an empty input box // No answer. i.e if there is no number or guess is empty
     if(!guess) {
-        //insted of cl, we would directly change the texts in the game
+        //insted of cl, we would directly modify the texts in the game
         document.querySelector('.message').textContent = 'Please Type a Number 😟'; //NICE
     } 
 
@@ -62,9 +58,8 @@ document.querySelector('.check').addEventListener('click', function(){
         document.getElementById("again").textContent = 'Go Again!🤭';
         document.querySelector('.number').textContent = number;
 
-        //I should set a time out here so the page can return to default
 
-        //for the highscore, when we win the game, it will update to the previous high of the score variable
+        //Whenever we win the game, the highscore will be updated if it is higher than the previous
         if(score > highScore) {
             highScore = score;
             document.querySelector('.highscore').textContent = highScore;
@@ -111,10 +106,10 @@ document.querySelector('.check').addEventListener('click', function(){
 
 })
 //NOW I AM CLOSE TO BECOMING A GAME MASTER.
+
+
 //Next, I want to be able to reload the page when the user clicks the again button  
 
-
-//We start by selecting the button
 document.querySelector('.again').addEventListener('click', function () {
     score = 10
     number = Math.trunc(Math.random() * 20) + 1; //random
@@ -131,17 +126,13 @@ document.querySelector('.again').addEventListener('click', function () {
     document.getElementById("again").style.backgroundColor = "#f1f1f1";
     document.getElementById("again").style.color = "#333";
 
-
     //we will also disable the input field and the check button
     document.querySelector('.check').disabled = false; 
     document.querySelector('.guess').disabled = false; 
 
-
-    //for the edited css
-    // document.getElementById("again").style.backgroundColor = "#f1f1f1";
-    // document.getElementById("again").style.color = "#333";
-
 })
 
 //GENIUS
+//GAME MASTER
+//SQUID GAME KING
 //TIME TO GO LIVE
