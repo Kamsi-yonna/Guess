@@ -8,7 +8,6 @@ body {
   font-family: 'Poppins';
 }
 
-
 .container {
   display: flex;
   justify-content: center;
@@ -24,8 +23,8 @@ body {
   padding: 40px;
   border-radius: 10px;
   /* box-shadow: 2px 2px 0 0 #000, 4px 4px 0 0 #fff; */
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 20px 30px, rgba(0, 0, 0, 0.1) 0px 10px 10px;
-  
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 20px 30px,
+    rgba(0, 0, 0, 0.1) 0px 10px 10px;
 }
 
 .heading {
@@ -77,21 +76,21 @@ body {
   border-style: groove;
   box-shadow: 2px 2px 0 0 #727272, 3px 3px 0 0 #fff;
   cursor: pointer;
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
-.btn:hover, .again:hover{
+.btn:hover,
+.again:hover {
   box-shadow: 4px 4px 0 0 #727272, 6px 6px 0 0 #fff;
   background-color: #5dbea3;
-
 }
 
-.right{
+.right {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
 }
-.right p{
+.right p {
   color: #fff;
 
   background: #5dbea3;
@@ -99,11 +98,10 @@ body {
   display: block;
   padding: 10px;
   border-radius: 5px;
-  box-shadow:  0 0 1px 1px #ffffff inset;
+  box-shadow: 0 0 1px 1px #ffffff inset;
   cursor: pointer;
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
-
 
 .again {
   background-color: #f1f1f1;
@@ -121,10 +119,10 @@ body {
   border-radius: 5px;
   border-style: groove;
   cursor: pointer;
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
-.right .label-score{
+.right .label-score {
   background: #5dbea3;
-  box-shadow:  0 0 1px 1px #ffffff inset;
+  box-shadow: 0 0 1px 1px #ffffff inset;
 }
